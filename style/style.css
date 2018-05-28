@@ -1,0 +1,229 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html,
+body {
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/*--------------------- selectLevelOfDifficulty ---------------------*/
+.select-level-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #a8ebd7;
+}
+
+.select-level-container .start-title {
+  text-align: center;
+}
+
+.select-level-container .start-title h1 {
+  margin: 50px 0;
+}
+
+.select-level-container .start-title h2 {
+  color: rgb(110, 110, 110);
+  margin-bottom: 60px;
+}
+
+.select-level-container ul {
+  list-style: none;
+  text-align: center;
+}
+
+.select-level-container li {
+  margin-bottom: 85px;
+}
+
+.select-level-container li button {
+  width: 240px;
+  height: 50px;
+  letter-spacing: 6px;
+  font-size: 22px;
+  background-color: #e1b12c;
+  border-color: #e1b12c;
+  border-style: solid;
+  color: #dfc684;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.select-level-container li:first-child button {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+  border-style: solid;
+  color: #99caad;
+}
+
+.select-level-container li:last-child button {
+  background-color: #c23616;
+  border-color: #c23616;
+  border-style: solid;
+  color: #c05e48
+}
+
+.select-level-container li button:hover {
+  background-color: #b69029;
+  border-color: #b69029;
+  color: #dfd0a7;
+}
+
+
+
+.select-level-container li:first-child button:hover {
+  background-color: #269454;
+  border-color: #269454;
+  color: #bbccc2;
+}
+
+.select-level-container li:last-child button:hover {
+  background-color: #91260e;
+  border-color: #91260e;
+  color: #b98f86;
+}
+
+/*------------------ GAME PAGE -----------------*/
+
+.game-page-wrapper {
+  width: 100%;
+  background-color: #a8ebd7
+}
+
+.game-page-wrapper ul {
+  list-style: none;
+}
+
+.game-page-wrapper li {
+  color: transparent;
+}
+
+.game-page-wrapper li::selection {
+  color: transparent;
+}
+
+/*------------towers------------*/
+.tower {
+  display: inline-block;
+  border: 2px solid #555;
+  height: 450px;
+  width: 24px;
+  margin-top: 70px;
+  transition: border 0.2s
+}
+
+.tower:hover {
+  border: 2px solid #a57e11;
+}
+
+.tower-one {
+  left: 20%;
+}
+
+.tower-two {
+  position:absolute;
+  left: 45%;
+}
+
+.tower-three {
+  position: absolute;
+  left: 81%;
+}
+
+/*-------------blocks-----------------*/
+
+.block-1 {
+  padding: 3px 20px 3px 20px;
+  display: inline-block;
+  transform: translate(-31%);
+  border: 3px solid #555;
+  background-color: rgba(85, 85, 85, 0.301);
+}
+
+.block-2 {
+  padding: 5px 35px 5px 35px;
+  display: inline-block;
+  transform: translate(-36%);
+  border: 3px solid #3c6382;
+  background-color: #3c63825d
+}
+
+.block-3 {
+  padding: 5px 51px 5px 51px;
+  display: inline-block;
+  transform: translate(-41%);
+  border: 3px solid #b71540;
+  background-color: #b7154050;
+}
+
+.block-4 {
+  padding: 5px 69px 5px 69px;
+  display: inline-block;
+  transform: translate(-43%);
+  border: 3px solid #fa983a;
+  background-color: #fa973a67
+}
+
+.block-5 {
+  padding: 5px 83px 5px 83px;
+  display: inline-block;
+  transform: translate(-43%);
+  border: 3px solid #3eb457;
+  background-color: #3eb45854
+}
+
+
+.selected {
+  margin-top: 20px;
+  margin-left: -80px;
+  font-size: 22px;
+}
+
+.selected span {
+  display: inline;
+  margin-left: 50px;
+  vertical-align: middle;
+  color: transparent;
+}
+
+.selected span::section {
+  color: transparent;
+}
+
+/*------------------------ ResetGame component----------------------------*/
+
+.reset-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 240px;
+  height: 50px;
+  letter-spacing: 6px;
+  font-size: 22px;
+  background-color: #e1b12c;
+  border-color: #e1b12c;
+  border-style: solid;
+  color: #dfd8c5;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+  border-radius: 5%;
+}
+
+.reset-button:hover {
+  background-color: #a57e11;
+  border-color: #a57e11;
+  color: #ffffff;
+}
+
+/*--------------------------- VICTORY ----------------------------*/
+.victory {
+  margin-top: 160px;
+  font-size: 40px;
+  color: #a57e11;
+}
